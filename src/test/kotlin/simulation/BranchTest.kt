@@ -1,10 +1,10 @@
 package simulation
 
-// import org.junit.Test
-// import queues.FifoQueue
-// import kotlin.test.assertEquals
+ import org.junit.Test
+ import queues.FifoQueue
+ import kotlin.test.assertEquals
 
-/*
+
 class Branch(val stopTime: Double) : Simulator() {
 
     override fun shouldTerminate() = currentTime() >= stopTime
@@ -30,12 +30,12 @@ class Branch(val stopTime: Double) : Simulator() {
         return (sink.meanResponseTime())
     }
 }
-*/
+
 
 class BranchTest {
-//    // If you have extended this simulator to handle Queueing Networks, you may find this test helpful. Please uncomment this test, and runSim in the Branch class above, to implement this.
-//    @Test
-//    fun `matches mm1 queueing theory`() {
-//        assertEquals(Branch(10000000.0).runSim(), 10.0, 0.1)
-//    }
+    // If you have extended this simulator to handle Queueing Networks, you may find this test helpful. Please uncomment this test, and runSim in the Branch class above, to implement this.
+    @Test
+    fun `matches mm1 queueing theory`() {
+        assertEquals(Branch(10000000.0).runSim(), 10.0, 0.1)
+    }
 }
